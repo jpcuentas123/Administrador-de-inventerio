@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=600px, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adiministrador de ventas e inventario</title>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="bootstrap/dist/js/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header class="container-flow mt-4"><!--Inicio de menu-->
+        <div class="row justify-content-start ml-3">
+            <div class="col-7">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center" id="Menu_Principal">                
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="row justify-content-center" style="width: 100% !important;">
+                                <div class="col-10">
+                                        <div class="collapse navbar-collapse" id="navbarNav">
+                                                <ul class="navbar-nav">
+                                                  <li class="nav-item active">
+                                                    <a class="nav-link" href="#">Inicio</a>
+                                                  </li>
+                                                  <li class="nav-item dropdown">
+                                                        <a class="nav-link dropdown-toggle" href="#" id="DropMenudeinventario" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                Modulo de inventario</a>
+                                                    <div class="dropdown-menu" aria-labelledby="DropMenudeinventario">
+                                                            <a class="btn-group dropright" href="#">
+                                                                    <button type="button" class="dropdown-item dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                      Productos
+                                                                    </button>
+                                                                    <div class="dropdown-menu">
+                                                                      <!-- Dropdown menu links -->
+                                                                    </div>
+                                                            </a>
+                                                            <a class="dropdown-item" href="#">Pedidos</a>
+                                                            <a class="dropdown-item" href="#">Proveedores</a>
+                                                          </div>
+                                                  </li>
+                                                  <li class="nav-item dropdown">
+                                                        <a class="nav-link dropdown-toggle" href="#" id="DropMenudeventas" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                Modulo de ventas</a>
+                                                    <div class="dropdown-menu" aria-labelledby="DropMenudeventas">
+                                                            <a class="dropdown-item" href="#">Registrar venta</a> 
+                                                            <a class="dropdown-item" href="#">Lista de ventas realizadas</a>  
+                                                            <a class="dropdown-item" href="#">Registrar pago a empleados</a>                                                                                                                       
+                                                          </div>
+                                                  </li>
+                                                  <li class="nav-item">
+                                                    <a class="nav-link" href="#">Perfil</a>
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                </div>
+                            </div>                    
+                    </nav>
+            </div>
+        </div>
+            
+    </header><!--Fin de menu-->
+
+    <section class="container-flow">
+        <div class="row align-items-start m-0 mt-5 justify-content-center seccionPrincipal">
+            <div class="col-12 p-0" style="max-width: 95% !important;">
+                    <div class="card" style="width: 100%;">
+                            <div class="card-header">
+                                <div class="row justify-content-between">
+                                    <div class="col-3">                                            
+                                            <p class="p-0 m-0">Lista de productos</p>                                                                                   
+                                    </div>
+                                    <div class="col-3">
+                                            <form class="form-inline my-2 my-lg-0">
+                                                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                              </form>
+                                    </div>
+                                </div>                              
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <div class="row align-items-start pt-3 pb-3 justify-content-center">
+                                    <div class="col-2 p-0">                                                                                
+                                            <div class="card" style="width: 90%;margin-left: auto">
+                                                    <div class="card-header">
+                                                      Nombre de productos
+                                                    </div>
+                                                    <ul class="list-group list-group-flush">
+                                                      <li class="list-group-item">Producto 1</li>
+                                                      <li class="list-group-item">Producto 2</li>
+                                                      <li class="list-group-item">Producto 3</li>
+                                                    </ul>
+                                                  </div>
+                                    </div>
+                                    <div class="col-2 p-0">                                                                                
+                                            <div class="card" style="width: 100%;">
+                                                    <div class="card-header">
+                                                      Refencia
+                                                    </div>
+                                                    <ul class="list-group list-group-flush">
+                                                      <li class="list-group-item">a</li>
+                                                      <li class="list-group-item">b</li>
+                                                      <li class="list-group-item">c</li>
+                                                    </ul>
+                                                  </div>
+                                    </div>
+                                    <div class="col-1 p-0">                                                                                
+                                            <div class="card" style="width: 100%;">
+                                                    <div class="card-header">
+                                                      Costo
+                                                    </div>
+                                                    <ul class="list-group list-group-flush">
+                                                      <li class="list-group-item">100</li>
+                                                      <li class="list-group-item">200</li>
+                                                      <li class="list-group-item">150</li>
+                                                    </ul>
+                                            </div>
+                                    </div>
+                                    <div class="col-2 p-0">                                                                                
+                                            <div class="card" style="width: 100%;">
+                                                    <div class="card-header">
+                                                      Proveedor
+                                                    </div>
+                                                    <ul class="list-group list-group-flush">
+                                                      <li class="list-group-item">Proveedor 1</li>
+                                                      <li class="list-group-item">Proveedor 2</li>
+                                                      <li class="list-group-item">Proveedor 3</li>
+                                                    </ul>
+                                                  </div>
+                                    </div>
+                                    <div class="col-1 p-0">                                                                                
+                                            <div class="card" style="width: 100%;">
+                                                    <div class="card-header">
+                                                      Precio
+                                                    </div>
+                                                    <ul class="list-group list-group-flush">
+                                                      <li class="list-group-item">120</li>
+                                                      <li class="list-group-item">220</li>
+                                                      <li class="list-group-item">170</li>
+                                                    </ul>
+                                            </div>
+                                    </div>
+                                    <div class="col-1 p-0">                                                                                
+                                            <div class="card" style="width: 100%;">
+                                                    <div class="card-header">
+                                                      Cantidad
+                                                    </div>
+                                                    <ul class="list-group list-group-flush">
+                                                      <li class="list-group-item">8</li>
+                                                      <li class="list-group-item">10</li>
+                                                      <li class="list-group-item">40</li>
+                                                    </ul>
+                                            </div>
+                                    </div>
+                                    <div class="col-2 p-0">                                                                             
+                                            <div class="card" style="width: 100%;">
+                                                    <div class="card-header">
+                                                      Fecha
+                                                    </div>
+                                                    <ul class="list-group list-group-flush">
+                                                      <li class="list-group-item">14/11/2018</li>
+                                                      <li class="list-group-item">14/11/2018</li>
+                                                      <li class="list-group-item">14/11/2018</li>
+                                                    </ul>
+                                                  </div>
+                                    </div>
+                                    <div class="col-1 p-0">                                                                             
+                                            <div class="card" style="width: 80%;" id="card_actualizar">
+                                                    <div class="card-header pr-0 pl-0" style="text-align: center">
+                                                      Actualizar
+                                                    </div>
+                                                    <ul class="list-group list-group-flush">
+                                                      <li class="list-group-item pr-0 pl-0 ">
+                                                        <div class="row justify-content-center">
+                                                                <img src="Act2.png" title="Actualizar Producto" alt="Error al cargar la imagen" width="20px" height="24px">
+                                                        </div>
+                                                      </li>
+                                                      <li class="list-group-item pr-0 pl-0">
+                                                            <div class="row justify-content-center">
+                                                                    <img src="Act2.png" title="Actualizar Producto" alt="Error al cargar la imagen" width="20px" height="24px">
+                                                            </div>
+                                                      </li>
+                                                      <li class="list-group-item pr-0 pl-0">
+                                                            <div class="row justify-content-center">
+                                                                    <img src="Act2.png" title="Actualizar Producto" alt="Error al cargar la imagen" width="20px" height="24px">
+                                                            </div>
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                    </div>
+                                </div>
+                                    
+                            </ul>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #13193a;
+    overflow-x: hidden;
+}
+#Menu_Principal{
+    background: #FFF !important;
+    color: black !important;
+    font-size: 1.2rem;
+}
+.seccionPrincipal{
+    width: 100vw;
+    height: 80vh;
+}
+#card_actualizar img{
+    cursor: pointer;
+}
